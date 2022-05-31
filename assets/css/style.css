@@ -41,7 +41,13 @@ html {
     text-align: left;
 }
 
+.mt-16 {
+    margin-top: 16px !important;
+}
 
+.mt-32 {
+    margin-top: 32px !important;
+}
 
 /* Main */
 #main{
@@ -113,6 +119,18 @@ html {
 /* End nav  */
 
 /* Begin Search */
+
+#header{
+    position: fixed;
+    height: 46px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: palevioletred;
+    
+}
+
+#header .mobile-menu-btn,
 #header .search {
     float: right;
     line-height: 46px;
@@ -123,22 +141,22 @@ html {
     color: #fff;
 }
 
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
 #header .search:hover {
-    color: #fff;
-    background-color: #000;
     cursor: pointer;
+    background-color: #000;
 }
 /* End search */
-
-#header{
-    position: fixed;
-    height: 46px;
-    left: 0;
-    right: 0;
-    top: 0;
-    background-color: palevioletred;
-}
-
 
 /* Begin Slider */
 #slider{
@@ -176,6 +194,7 @@ html {
 
 #contact .contact-alike{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -213,8 +232,14 @@ html {
 
 }
 
+.contact-info a {
+    color: #1c23d3;
+    opacity: 0.8;
+}
 
-
+.contact-info a:hover {
+    opacity: 1;
+}
 
 #contact .about-text {
     font-size: 15px;
@@ -299,7 +324,7 @@ html {
 /* Addread */
 .places-list {
     overflow: hidden;
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 48px;
 }
 
@@ -315,16 +340,15 @@ html {
 }
 
 .places-content{
-    
     text-align: left;
     background-color: #fff;
-    font-size: 15px;
     padding: 16px;
     
 }
 
 .places-name{
     margin-top: 15px;
+    font-size: 15px;
 }
 
 .places-time{
@@ -349,6 +373,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .places-buy:hover {
@@ -517,3 +542,6 @@ mà
 #footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
 }
+
+
+/* Mobile width: < 740px*/
